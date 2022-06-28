@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&family=Poppins:wght@200;300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+section:not(#hero) {
+  padding: 4rem 0.2rem;
+  text-align: center;
+}
+section:not(#hero) h1:nth-child(1) {
+  font-weight: 800;
+  font-style: italic;
+  margin: 1rem 0;
+}
+
+#hero {
+  position: relative !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://images.unsplash.com/photo-1467803738586-46b7eb7b16a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80") center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+#hero nav {
+  z-index: 100;
+}
+#hero .hero-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#hero .hero-container .main-carousel {
+  color: #fff;
+}
+#hero .hero-container .main-carousel .carousel-cell {
+  padding: 0 3rem;
+  text-align: center;
+}
+#hero .hero-container .main-carousel .carousel-cell h1 {
+  font-weight: 700;
+}
+#hero .flickity-button {
+  display: none;
+}
+#hero .flickity-page-dots {
+  position: absolute;
+  bottom: -4rem;
+}
+#hero .flickity-page-dots .dot {
+  background-color: #fff;
+  height: 3px;
+  border-radius: 0;
+  width: 1.5rem;
+}
+
+#about .about-img {
+  width: 100%;
+  height: 100%;
+  margin: 1rem 0;
+}
+#about .about-img img {
+  border-radius: 4px;
+}
+#about .about-text .about-tag {
+  color: rgb(0, 132, 255);
+  font-weight: 600;
+}
+#about .about-text .about-head {
+  font-weight: 800;
+  font-style: italic;
+  margin: 1rem 0;
+}
+#about .about-text .about-desc {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#industry .card {
+  margin-bottom: 1rem;
+  text-align: left !important;
+}
+#industry .card .card-title {
+  font-weight: 800;
+}
+#industry .card .card-text {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#competencies .comp-cards {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url("https://images.unsplash.com/photo-1467803738586-46b7eb7b16a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80") center no-repeat;
+  background-size: cover;
+  min-height: 25rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+#competencies .comp-cards h5 {
+  font-weight: 800;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid white;
+}
+
+#process,
+#services {
+  background-color: rgba(0, 132, 255, 0.1);
+}
+#process .card,
+#services .card {
+  max-width: 18rem;
+  margin-right: 1rem;
+  text-align: left;
+}
+#process .card .card-title,
+#services .card .card-title {
+  font-weight: 800;
+}
+
+#careers {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1467803738586-46b7eb7b16a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80") center no-repeat;
+  background-size: cover;
+}
+#careers .career-head {
+  color: rgb(0, 132, 255);
+}
+#careers p {
+  color: #fff;
+}
+#careers .career-visual {
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+#careers .career-visual div {
+  background: #fff;
+  padding: 1rem;
+  margin: 0 1rem 1rem 0;
+}
+
+#clients .clients-logo {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+}
+#clients .clients-logo .logos {
+  height: 200px;
+  width: 200px;
+}
+
+#contact {
+  background-color: rgba(0, 132, 255, 0.1);
+}
+#contact .contact-left {
+  margin-bottom: 3rem;
+}
+#contact .contact-right .form {
+  background: #fff;
+  padding: 2rem 1rem;
+  text-align: left;
+  border-radius: 1rem;
+  box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.6);
+}
+#contact .contact-right .form .form-head {
+  font-style: italic;
+  font-weight: 700;
+}
+#contact .contact-right .form .form-tag {
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid grey;
+  padding-bottom: 1rem;
+}
+#contact .contact-right .form textarea {
+  width: 100%;
+  border: 1px solid #ced4da;
+  padding: 0.75rem;
+}
+#contact .contact-right .form button.btn {
+  width: 100%;
+}
+
+footer {
+  padding: 4rem 0.5rem;
+  color: #fff;
+  background: rgb(0, 0, 24);
+}
+footer .footer-div {
+  margin: 2rem 0;
+}
+footer .footer-div > h3 {
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+footer .footer-div p {
+  font-style: italic;
+}
+footer .footer-center {
+  font-style: italic;
+}
+footer .footer-center .link-list {
+  list-style: none;
+}
+footer .footer-center .link-list li {
+  display: flex;
+  margin: 1rem 0;
+  position: relative;
+}
+footer .footer-center .link-list li::before {
+  content: "";
+  position: absolute;
+  height: 1.5px;
+  width: 4px;
+  left: -0.6rem;
+  top: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+}
+footer .footer-center .link-list li a {
+  color: white;
+}
+footer .footer-right {
+  font-style: italic;
+}
+footer .footer-right .blog-posts {
+  display: flex;
+}
+footer .footer-right .blog-posts .img {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  margin-right: 1rem;
+}
+footer .subscribe .left h3 {
+  font-style: italic;
+  font-weight: 700;
+}
+footer .subscribe .right button.btn {
+  border-radius: 0 4px 4px 0 !important;
+}
+
+.copyright {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  section:not(#hero) {
+    padding: 4rem 0;
+  }
+
+  #about {
+    text-align: left !important;
+  }
+  #about .about-img {
+    margin: 0 !important;
+  }
+
+  .clients-logo {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .footer-row {
+    justify-content: space-between !important;
+  }
+
+  footer .subscribe {
+    display: flex;
+    align-items: center;
+  }
+  footer .subscribe .right {
+    width: 80%;
+    margin-left: 3rem;
+  }
+  footer .subscribe .right .input input {
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 1.3rem;
+    border-radius: 4px;
+    border-right: none !important;
+  }
+}/*# sourceMappingURL=style.css.map */
